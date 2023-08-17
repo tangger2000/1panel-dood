@@ -4,7 +4,7 @@ services:
     image: tangger/1panel-dood:latest
     environment:
       - DATA_DIR=<your_data_dir>
-    command: sh -c "echo $DATA_DIR | bash /app/1panel/install.sh"
+    command: sh -c "echo $DATA_DIR | bash /app/1panel-v1.5.1-linux-amd64/install.sh"
     network_mode: "host"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
