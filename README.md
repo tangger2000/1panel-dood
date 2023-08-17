@@ -9,6 +9,10 @@ Next I will provide you with several ways to install it:
 1panel使用systemctl来管理1panel服务（包括启动、重启、开启守护、开机自启），这在包含systemctl的操作系统上是毫无问题的。
 为了让1panel可以在Docker上安装1panel，我修改了1panel官方提供的安装脚本，并打包了一个docker镜像。
 接下来我将为你提供几种安装方式：
+## 默认端口、用户名、密码
+端口： 16413  
+用户名：1panel  
+密码：1panel  
 
 ## DooD Install Methods
 DooD stands for Docker out of Docker, and he is a form of using Docker on the host inside a Docker container. The benefit of this is that we can directly use the host Docker's resources, such as the network stack.
