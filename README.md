@@ -48,11 +48,11 @@ First of all, there is a network stack in DinD itself, and you need to map DinD'
 【好吧，我想到这个方式就头大，暂时还没写docker-compose文件，不想写~~】
 
 ## 80, 443 port occupation problem
-Users who use NAS servers such as QunHui or Unraid should pay attention to this point, QunHui itself runs an Apache, which will occupy ports 80 and 443 of the host computer.  
-If you choose host mode, please choose to free up port 80 and 443 of Qunhui and Unraid. Please Bing it by yourself.  
+Users who use NAS servers such as Synology or Unraid should pay attention to this point, Synology itself runs an NGINX/Apache, which will occupy ports 80 and 443 of the host computer.  
+If you choose host mode, please choose to free up port 80 and 443 of Synology and Unraid. Please Bing it by yourself.  [Synology free 80/443 Port](https://www.cnblogs.com/zhengdaojie/p/16019318.html)
 Otherwise, choose bridge mode for network mode and map the ports by yourself.
 
 80、443端口占用问题  
-使用群晖、Unraid等NAS服务器的用户尤其需要注意这点，群晖本身运行了一个Apache，会占用宿主机的80、443端口。  
+使用群晖、Unraid等NAS服务器的用户尤其需要注意这点，群晖本身运行了一个NGINX/Apache，会占用宿主机的80、443端口。  
 如果网络模式选择host模式，请选择将群晖、Unraid等系统的80、443端口解放。请自行Bing一下。  
 否则网络模式选择bridge模式，并自行映射端口。
