@@ -22,7 +22,7 @@ DooD是指Docker out of Docker，他是在Docker容器内部使用主机上的Do
 version: '3'
 services:
   1panel-dood:
-    image: 1panel-dood:latest
+    image: tangger/1panel-dood:latest
     command: 1panel
     network_mode: "host"
     volumes:
