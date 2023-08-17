@@ -34,4 +34,4 @@ VOLUME /var/run/docker.sock
 
 # 安装1panel
 RUN cd /app && wget https://github.com/tangger2000/1panel-dood/raw/main/1panel-v1.5.1-linux-amd64.zip && \
-	unzip 1panel-v1.5.1-linux-amd64.zip && cd 1panel-v1.5.1-linux-amd64
+	unzip 1panel-v1.5.1-linux-amd64.zip && cd 1panel-v1.5.1-linux-amd64 && mv 1panel-v1.5.1-linux-amd64 1panel
