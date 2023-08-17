@@ -1,0 +1,10 @@
+version: '3'
+services:
+  1panel-dood:
+    image: 1panel-dood:latest
+    command: 1panel
+    network_mode: "host"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /volume1/docker/1panel/data:/opt
+    restart: always
