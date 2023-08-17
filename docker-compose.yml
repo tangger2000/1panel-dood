@@ -8,5 +8,5 @@ services:
     network_mode: "host"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - $DATA_DIR:$DATA_DIR
+      - <your_data_dir>:<your_data_dir>
     restart: always
