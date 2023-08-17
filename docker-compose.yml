@@ -2,9 +2,11 @@ version: '3'
 services:
   1panel-dood:
     image: tangger/1panel-dood:latest
-    command: 1panel
+    environment:
+      - DATA_DIR=<your_data_dir>
+    command: sh -c "echo $DATA_DIR | bash /app/1panel/install.sh"
     network_mode: "host"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - <your_data_dir>:/opt
+      - $DATA_DIR:$DATA_DIR
     restart: always
