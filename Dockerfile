@@ -35,6 +35,3 @@ VOLUME /var/run/docker.sock
 # 安装1panel
 RUN cd /app && wget https://github.com/tangger2000/1panel-dood/raw/main/1panel-v1.5.1-linux-amd64.zip && \
 	unzip 1panel-v1.5.1-linux-amd64.zip && cd 1panel-v1.5.1-linux-amd64 && ./install.sh
-	
-# 启动容器时自动启动1panel
-ENTRYPOINT ["/bin/bash"]
