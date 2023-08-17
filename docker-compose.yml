@@ -6,5 +6,5 @@ services:
     network_mode: "host"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /volume1/docker/1panel/data:/opt
+      - <your_data_dir>:/opt
     restart: always
