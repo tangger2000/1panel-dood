@@ -23,11 +23,14 @@ RUN apt-get update && apt-get install ca-certificates curl gnupg dpkg wget unzip
 	"deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
 	"$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
 	tee /etc/apt/sources.list.d/docker.list > /dev/null && \
-    apt-get update && apt-get install docker-ce docker-ce-cli -y && \
+    apt-get update && apt-get install docker-ce-cli -y && \
 	apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # 设置工作目录
 WORKDIR /app
+
+# 在容器中挂载主机上的 docker.sock
+VOLUME /var/run/docker.sock
 
 # 安装1panel
 RUN cd /app && wget https://github.com/tangger2000/1panel-dood/raw/main/1panel-v1.5.1-linux-amd64.zip && \
