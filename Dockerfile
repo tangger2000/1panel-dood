@@ -16,7 +16,7 @@ LABEL description="1panel-dood"
 LABEL version="1.5"
 
 # 安装 Docker 及其依赖
-RUN apt-get update && apt-get install ca-certificates curl gnupg dpkg wget unzip -y && \
+RUN apt-get update && apt-get install ca-certificates curl gnupg dpkg wget unzip openssh-server -y && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
 	chmod a+r /etc/apt/keyrings/docker.gpg && \
     echo \
