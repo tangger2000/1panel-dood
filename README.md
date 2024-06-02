@@ -1,3 +1,6 @@
+# Caution / 提醒
+## 我没有精力对该仓库进行长期性维护，介于目前okxlin已经实现了更好的方式运行1panel，该仓库将归档。请各位移步okxlin的仓库[docker-1panel](https://github.com/okxlin/docker-1panel).
+## Limited by the time and energy of myself, this repo has been archived. Meanwhile, there is a better way to run 1Panel by okxlin, please access this repo  [docker-1panel](https://github.com/okxlin/docker-1panel).
 # 1panel-dood
 Running a 1panel panel in docker via dood.  
 1panel is a very modern, easy to use, efficient and beautiful server management panel. 1panel itself is a compiled binary, but 1panel does not provide a Docker image to install, while the one-click install script provided by 1panel does not install properly on systems lacking systemctl.
